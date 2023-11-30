@@ -1,0 +1,3 @@
+C:/Users/usuario/Documents/GitHub/casointegrador/cmake-build-debug/CMakeFiles/casointegrador.dir
+C:/Users/usuario/Documents/GitHub/casointegrador/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/usuario/Documents/GitHub/casointegrador/cmake-build-debug/CMakeFiles/rebuild_cache.dir
