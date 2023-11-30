@@ -26,27 +26,25 @@ void load_script(const char* filename, bool show_script = false)
     string script;
     ifstream file;
 
-    try// Manejo de excepciones
+    try
     {
-        // Intenta abrir el archivo
         file.open(filename);
+
         if (!file.is_open())
         {
             cerr << "Error de apertura de " << filename << endl;
             return;
         }
-        // Lee el contenido del archivo y lo almacena en 'script'
+
         script.assign((istreambuf_iterator<char>(file)), (istreambuf_iterator<char>()));
-        // Cierra el archivo después de la lectura
         file.close();
 
-        // Muestra el contenido si show_script es verdadero
         if (show_script)
         {
             cout << ColorConsole::fg_blue << ColorConsole::bg_white;
             cout << script << endl;
         }
-        // Actualiza la consola con el contenido del script
+
         consoleBox->new_text();
         consoleBox->set_text(script);
     }
