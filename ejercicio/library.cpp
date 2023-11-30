@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// Estructuras para manejar colores en la consola
 struct ColorConsole
 {
     static constexpr auto fg_blue = "\033[34m";
